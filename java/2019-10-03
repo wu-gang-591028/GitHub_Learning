@@ -1,0 +1,7 @@
+ *. 在注解中加<script>, 就可以象在 XML 中一样, 加 <if test="name != null and name!= '' "> 等标签了.
+    @Update("<script>",
+        "update users <set>",
+        "<if test="name != null and name!= '' ">name = #{name}</if>",
+        "<if test="age != null and age != '' ">age= #{age}</if></set>",
+        "where id = #{id}</script>")
+    int updateById(Integer id);
