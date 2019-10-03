@@ -5,3 +5,5 @@
         "<if test="age != null and age != '' ">age= #{age}</if></set>",
         "where id = #{id}</script>")
     int updateById(Integer id);
+
+ *. 上述例子中注解的字符串拼接不是用"+"号，而是用","号。 查看源码得知是一个字符串数组，故用"+"或者","号都可以实现。
