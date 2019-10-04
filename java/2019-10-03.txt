@@ -1,9 +1,0 @@
- *. 在注解中加<script>, 就可以象在 XML 中一样, 加 <if test="name != null and name!= '' "> 等标签了.
-    @Update("<script>",
-        "update users <set>",
-        "<if test="name != null and name!= '' ">name = #{name}</if>",
-        "<if test="age != null and age != '' ">age= #{age}</if></set>",
-        "where id = #{id}</script>")
-    int updateById(Integer id);
-
- *. 上述例子中注解的字符串拼接不是用"+"号，而是用","号。 查看源码得知是一个字符串数组，故用"+"或者","号都可以实现。
