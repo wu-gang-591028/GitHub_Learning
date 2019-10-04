@@ -7,3 +7,5 @@
     的编辑器. 删除文件后, 如果它所在的路径空了, 也同时删除路径.
 04. https://desktop.github.com/ 上有一个下载桌面管理程序 GitHubDesktopSetup.exe 的安装程序, 安装后产生 GitHubDesktop.exe 程序.
     它是一个桌面程序, 有一个自己的界面. 不象 SVN, 利用下拉菜单来使用功能.
+    
+05. 
