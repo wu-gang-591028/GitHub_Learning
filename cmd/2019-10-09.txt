@@ -1,1 +1,7 @@
-111
+ *. 如何在命令行窗口建立远程仓库?
+ *. curl -u wu-gang-591028:wugang19591028xyz https://api.github.com/user/repos -d '{ "name": "bbcc1", "description":"333" }'
+    建立了一个远程仓库.
+ *. git remote add ddd https://github.com/wu-gang-591028/bbcc1
+    是建立一个远程库的别名. 以后用这个别名代表远程库.
+ *. git push ddd master
+    把当前本地库的东西推到远程库中去.
