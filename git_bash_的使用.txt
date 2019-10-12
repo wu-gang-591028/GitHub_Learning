@@ -1,0 +1,19 @@
+ *. 如何在命令行窗口建立远程仓库?
+ *. curl -u wu-gang-591028:wugang19591028xyz https://api.github.com/user/repos -d '{ "name": "bbcc1", "description":"333" }'
+    建立了一个远程仓库.
+ *. git remote add ddd https://github.com/wu-gang-591028/bbcc1
+    是建立一个远程库的别名. 以后用这个别名代表远程库.
+ *. git push ddd master
+    把当前本地库的东西推到远程库中去.
+
+ *. 命令的别名. 原理是, 找命令时, 到别名集合中再找一遍. 它就是简单的替换.
+    $ git config --global alias.co checkout
+    #. --global 如果写参数的全称, 使用两个减号.
+    $ git config --global alias.unstage 'reset HEAD --'
+    $ git unstage fileA 等价于 $ git reset HEAD -- fileA
+    
+ *. 打标签. 是针对仓库中的所有文件. 是对最近的提交打标签?
+ 
+ *. 分支变量. 缺省的是 master 分支. 用 git branch iss53 来产生一个分支 iss53.
+ *. 快照. 每一次提交, 产生一个快照. 它是一个完整的目录体系. 
+ *. HEAD 变量. 指向当前签出的分支. 它是本地的概念.
